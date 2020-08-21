@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - JGProgressHUD (2.1)
+  - SwiftLint (0.40.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JGProgressHUD
+  - SwiftLint
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - JGProgressHUD
+    - SwiftLint
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  SwiftLint: 4154893c73a4c52d6240195507eb7a3e3c64087e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 06e8c82cc0e1bfc54a7d6cecf2f5c22248afb79c
+
+COCOAPODS: 1.9.3
