@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Pepsi",
+      "units": "1x1 unidade por caja",
+      "size": "120ML CAN",
+      "value": 10.60,
+      "promotion": 10.20,
+      "image": "pepsi"
+    },
+    {
+      "name": "Pepsi Diet",
+      "units": "1x24 unidade por caja",
+      "size": "120ML LATAS",
+      "value": 603.90,
+      "promotion": 0,
+      "image": "pepsiDiet"
+    },
+    {
+      "name": "Seven UP lata",
+      "units": "1x24 unidade por caja",
+      "size": "120ML CAN",
+      "value": 380.20,
+      "promotion": 200.90,
+      "image": "sevenUP"
+    }
+]

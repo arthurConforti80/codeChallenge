@@ -17,6 +17,7 @@ class ListProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewModel.getJson()
         self.ProgressLoading()
         self.setupStatusBar()
         self.startTableView()
@@ -53,12 +54,13 @@ extension ListProductViewController: UITableViewDelegate {
 
 extension ListProductViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.listProductModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListProductTableViewCell", for: indexPath) as! ListProductTableViewCell
-        
+        let product = viewModel.listProductModel[indexPath.row]
+        cell.setupLabels(product: product)
         cell.setupBtns()
         return cell
     }

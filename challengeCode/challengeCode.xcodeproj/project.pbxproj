@@ -22,6 +22,7 @@
 		881DF7DD24EF63AF000480F8 /* ListProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DF7DC24EF63AF000480F8 /* ListProduct.swift */; };
 		884A401324EF7BA8006E7549 /* ListProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A401124EF7BA8006E7549 /* ListProductTableViewCell.swift */; };
 		884A401424EF7BA8006E7549 /* ListProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A401224EF7BA8006E7549 /* ListProductTableViewCell.xib */; };
+		88B6CE5524F07B77001B6838 /* service.json in Resources */ = {isa = PBXBuildFile; fileRef = 88B6CE5424F07B77001B6838 /* service.json */; };
 		AF7318411E7DF3F31BED3864 /* Pods_challengeCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE9B2E9308D18051288F6FD /* Pods_challengeCode.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		881DF7DC24EF63AF000480F8 /* ListProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProduct.swift; sourceTree = "<group>"; };
 		884A401124EF7BA8006E7549 /* ListProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductTableViewCell.swift; sourceTree = "<group>"; };
 		884A401224EF7BA8006E7549 /* ListProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListProductTableViewCell.xib; sourceTree = "<group>"; };
+		88B6CE5424F07B77001B6838 /* service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = service.json; sourceTree = "<group>"; };
 		90CF5EDFF0541D375285EF4F /* Pods-challengeCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challengeCode.debug.xcconfig"; path = "Target Support Files/Pods-challengeCode/Pods-challengeCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 		881DF7D724EF635B000480F8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				88B6CE5424F07B77001B6838 /* service.json */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				881DF7AB24EF4B85000480F8 /* LaunchScreen.storyboard in Resources */,
+				88B6CE5524F07B77001B6838 /* service.json in Resources */,
 				884A401424EF7BA8006E7549 /* ListProductTableViewCell.xib in Resources */,
 				881DF7A824EF4B85000480F8 /* Assets.xcassets in Resources */,
 				881DF7A624EF4B84000480F8 /* Main.storyboard in Resources */,

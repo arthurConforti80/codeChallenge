@@ -22,6 +22,9 @@ class ListProductTableViewCell: UITableViewCell {
     @IBOutlet weak var btnDescrease: UIButton!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var viewCount: UIView!
+    @IBOutlet weak var leadingValueRisk: NSLayoutConstraint!
+    
+    var countUnits: Int!
     
 
     override func awakeFromNib() {
@@ -36,7 +39,7 @@ class ListProductTableViewCell: UITableViewCell {
     }
     
     func setupBtns() {
-        self.countLabel.text = "5"
+  
         self.viewCount.layer.borderWidth = 2.0
         self.viewCount.layer.borderColor = UIColor.lightGray.cgColor
         self.viewCount.layer.cornerRadius = 8
@@ -53,7 +56,43 @@ class ListProductTableViewCell: UITableViewCell {
         
     }
     
+    func setupLabels(product: ListProducts?) {
+        
+        self.titleLabel.text = product?.name
+        self.subTitleLabel.text = product?.size
+        self.unitLabel.text = product?.units
+        self.countLabel.text = "0"
+        let value = String(format: "%.2f", product?.value ?? 0.0)
+        let promotion = String(format: "%.2f", product?.promotion ?? 0.0)
+        if product?.promotion == 0.0 {
+            self.valueRiskLabel.text = "RD$\(value)"
+            self.leadingValueRisk.constant = 10
+            self.valueLabel.isHidden = true
+        } else {
+            self.valueLabel.text = "RD$\(promotion)"
+
+            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "RD$\(value)")
+                attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+            self.valueRiskLabel.attributedText = attributeString
+            
+        }
+
+        self.imagemView.image = UIImage(named: product?.image.lowercased() ?? "")
+        
+        
+
+    }
+    
     @IBAction func addUnit(_ sender:UIButton) {
+        
+        self.btnSelect.setTitleColor(UIColor.clear, for: .normal)
+        self.btnSelect.setTitle("", for: .normal)
+        let systemImage = UIImage(systemName: "checkmark")
+        self.btnSelect.setImage(systemImage, for: .normal)
+        self.btnSelect.layer.borderWidth = 0
+        self.btnSelect.layer.borderColor = UIColor.clear.cgColor
+        self.btnSelect.layer.cornerRadius = 8
+        self.btnSelect.layer.backgroundColor = UIColor.lightGray.cgColor
         
         
         
