@@ -1,4 +1,4 @@
 # codeChallenge
-# Downloads the project
-# pod install
-# run project
+- Downloads the project
+- pod install
+- run project
