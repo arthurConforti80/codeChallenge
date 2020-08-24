@@ -23,7 +23,7 @@ class ListProductViewModel: ListProductViewDelegate {
     var coordinatorDelegate: ListProductViewModelCoordinatorDeelegate?
     var newDatas: String?
     var listProductModel: [ListProducts] = []
-    
+
     func goBack() {
         coordinatorDelegate?.back(viewModel: self)
     }

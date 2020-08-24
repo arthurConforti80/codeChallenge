@@ -32,15 +32,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kVa-KK-O1s">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kVa-KK-O1s">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="0Kd-HN-pyj">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="180" id="0Kd-HN-pyj">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Kd-HN-pyj" id="Wa5-71-2fM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -52,11 +52,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="contacts" id="ZFj-U3-ugV"/>
-                                    <tabBarItem systemItem="more" id="f44-mP-Ypj"/>
-                                    <tabBarItem systemItem="search" id="G6r-3d-pwr"/>
-                                    <tabBarItem systemItem="history" id="VlB-KH-lzI"/>
-                                    <tabBarItem systemItem="mostViewed" id="Yty-P8-KWC"/>
+                                    <tabBarItem title="Browser" id="ZFj-U3-ugV"/>
+                                    <tabBarItem systemItem="contacts" id="f44-mP-Ypj"/>
+                                    <tabBarItem title="Deals" selectedImage="iconRewards" id="G6r-3d-pwr"/>
+                                    <tabBarItem title="Rewards" selectedImage="iconDeals" id="VlB-KH-lzI"/>
+                                    <tabBarItem title="Delivery" selectedImage="iconDelivery" id="Yty-P8-KWC"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -79,4 +79,9 @@
             <point key="canvasLocation" x="556.52173913043487" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconDeals" width="980" height="976"/>
+        <image name="iconDelivery" width="16" height="16"/>
+        <image name="iconRewards" width="512" height="512"/>
+    </resources>
 </document>

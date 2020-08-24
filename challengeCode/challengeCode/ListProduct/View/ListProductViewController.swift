@@ -5,6 +5,8 @@
 //  Created by user179012 on 8/20/20.
 //  Copyright © 2020 user179012. All rights reserved.
 //
+
+import Foundation
 import UIKit
 import JGProgressHUD
 
@@ -17,6 +19,7 @@ class ListProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.isHidden = true
         self.viewModel.getJson()
         self.ProgressLoading()
         self.setupStatusBar()
@@ -27,7 +30,11 @@ class ListProductViewController: UIViewController {
         let hud = JGProgressHUD(style: .dark)
         hud.textLabel.text = "Loading"
         hud.show(in: self.view)
-        hud.dismiss(afterDelay: 3.0)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            hud.dismiss()
+            self.tableView.isHidden = false
+        }
     }
     
     func setupStatusBar() {
@@ -38,11 +45,11 @@ class ListProductViewController: UIViewController {
     }
     
     func startTableView() {
-        
+
         let nib = UINib(nibName: "ListProductTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ListProductTableViewCell")
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.tableView.register(nib, forCellReuseIdentifier: "ListProductTableViewCell")
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
     }
 

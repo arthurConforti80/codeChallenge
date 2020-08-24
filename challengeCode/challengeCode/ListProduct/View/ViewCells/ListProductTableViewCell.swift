@@ -24,7 +24,7 @@ class ListProductTableViewCell: UITableViewCell {
     @IBOutlet weak var viewCount: UIView!
     @IBOutlet weak var leadingValueRisk: NSLayoutConstraint!
     
-    var countUnits: Int!
+    var countUnits: Int = 0
     
 
     override func awakeFromNib() {
@@ -94,7 +94,18 @@ class ListProductTableViewCell: UITableViewCell {
         self.btnSelect.layer.cornerRadius = 8
         self.btnSelect.layer.backgroundColor = UIColor.lightGray.cgColor
         
+    }
+    
+    @IBAction func btnAscrease(_ sender:UIButton) {
         
+        self.countUnits = self.countUnits + 1
+        self.countLabel.text = String(self.countUnits)
+        
+    }
+    
+    @IBAction func btnDescrease(_ sender:UIButton) {
+        self.countUnits = self.countUnits - 1
+        self.countLabel.text = String(self.countUnits)
         
     }
     
