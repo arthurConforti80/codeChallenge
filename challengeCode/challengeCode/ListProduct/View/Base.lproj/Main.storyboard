@@ -52,11 +52,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem title="Browser" id="ZFj-U3-ugV"/>
+                                    <tabBarItem title="Browser" image="magnifyingglass" catalog="system" id="ZFj-U3-ugV"/>
                                     <tabBarItem systemItem="contacts" id="f44-mP-Ypj"/>
-                                    <tabBarItem title="Deals" selectedImage="iconRewards" id="G6r-3d-pwr"/>
-                                    <tabBarItem title="Rewards" selectedImage="iconDeals" id="VlB-KH-lzI"/>
-                                    <tabBarItem title="Delivery" selectedImage="iconDelivery" id="Yty-P8-KWC"/>
+                                    <tabBarItem title="Deals" image="icoDeals" id="G6r-3d-pwr"/>
+                                    <tabBarItem title="Rewards" image="iconRewards" id="VlB-KH-lzI"/>
+                                    <tabBarItem title="Delivery" image="iconDelivery" selectedImage="iconDelivery" id="Yty-P8-KWC"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -80,8 +80,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconDeals" width="980" height="976"/>
-        <image name="iconDelivery" width="16" height="16"/>
-        <image name="iconRewards" width="512" height="512"/>
+        <image name="icoDeals" width="25" height="25"/>
+        <image name="iconDelivery" width="25" height="25"/>
+        <image name="iconRewards" width="25" height="25"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>
